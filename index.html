@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ImportFood</title>
+
+</head>
+<body>
+<!-- Aqui temos a barra de navegação contendo a logo e o menu -->
+    <header class="navegacao">
+        <a href="#"><img src="img/logo_p.png" alt="Logo" class="logo"></a>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicial</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="download/catalogo.pdf" download target="_blank">Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+<!-- Aqui temos o conteudo principal da pagina -->
+    <section class="conteudoPrincipal">
+        <img src="img/Cafe.png" alt="Café Bem Forte" class="imagemPrincipal" >
+        <div class="textoPrincial">
+            <h1>Desperte seus sentidos com o Café Bem Forte</h1>
+            <p>
+                Na agitada rotina diária, precisamos de um momento que nos conecte com o que realmente importa. 
+                É aí que entra o Café Bem Forte, sua paixão diária em cada xícara. Nossa busca incessante pela perfeição resulta em um café que é mais do que uma bebida;
+                é uma experiência que desperta seus sentidos e transforma os momentos comuns em extraordinários.
+            </p>
+        </div>
+
+    </section>
+
+
+
+<!-- Aqui temos o conteudo do carrossel -->
+    <section class="conteudoCarrossel">
+            <div class="textoCarrossel">
+                <h1>Cebola Palha</h1>
+                <p>
+                    Cebola Palha Crocante é originada da cebola empanada e frita em óleo de soja de primeira qualidade, em um processo exclusivo da extração 
+                    do óleo para que a cebola fique crocante. <br>A Cebola Palha pode acompanhar qualquer tipo de refeição.
+                </p>
+            </div>
+    
+
+<!-- Aqui temos o carrossel em si -->
+        <div class="carrosselContainer">
+            <div class="carrossel">
+                <div class="slide">
+                    <img src="img/Cebola_Defumada.png" alt="Cebola Defumada" class="imgCarrosel">
+                </div>
+                <div class="slide">
+                    <img src="img/Cebola_Limão.png" alt="Cebola Toque de Limão" class="imgCarrosel">
+                </div>
+                <div class="slide">
+                    <img src="img/Cebola_Picante.png" alt="Cebola Picante" class="imgCarrosel">
+                </div>
+                <div class="slide">
+                    <img src="img/Cebola_Tradicional.png" alt="Cebola Tradicional" class="imgCarrosel">
+                </div>
+            </div>
+            <button class="voltButton" onclick="changeSlide(-1)"> Voltar </button>
+            <button class="proxButton" onclick="changeSlide(1)"> Proximo</button>
+        </div>
+    </section>
+
+
+<!-- Aqui temos o footer com o javascript após ele para ele ser o ultimo carregamento da pagina e não pesar no navegador do usuario -->
+    <footer>
+        <p>&copy;2023 Raphael Pinto Gomes <br> Matricula: 202302290957</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
